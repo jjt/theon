@@ -25,6 +25,22 @@ bower install --save theon
 
 ####Sass functions/placeholders:
 ```scss
+@import 'theon';
+
+// Basic usage is through theon($index)
+body {
+  background: theon(14);
+}
+
+svg {
+  @extend %theonFill-8;
+  @extend %theonStroke-4;
+}
+```
+
+#### Customise with Sass
+
+```scss
 // Can set custom base, lightnesses, and saturation variables before including
 $theonBase: #7a7a79; // Default
 $theonLgts: 4 10 16 22 29 36 43 50 57 64 71 78 84 89 95; // Defaults
@@ -37,21 +53,9 @@ $theonSats: 3 3  3  3  3  4  5  5  5  5  5  6  7  9  10; // Defaults
 $customLgts: 4 10 16 22 29 36 43 50 57 64 71 78 84 89 95;
 $customSats: 3 3  3  3  3  4  5  5  5  5  5  6  7  9  10;
 theonConfig(#7a7a79, $customLgts, $customSats); 
-
-// Basic usage is through theon($index)
-// Default number of array elements is 15
-body {
-  background: theon(14);
-}
-
-svg {
-  @extend %theonFill-8;
-  @extend %theonStroke-4;
-}
-
 ```
 
-#### Adding CSS classes with Sass
+#### Outputting CSS classes with Sass
 
 ```scss
 // Set these vars to customise
@@ -65,4 +69,4 @@ $theonSats: 10, 10, 20, 30, 40
 
 #### Enjoy
 
-![Ouch](http://img.pandawhale.com/112961-Ramsay-Snow-sausage-gif-Imgur-aNM9.gif)
+![Wigglewigglewigglewiggle](http://img.pandawhale.com/112961-Ramsay-Snow-sausage-gif-Imgur-aNM9.gif)

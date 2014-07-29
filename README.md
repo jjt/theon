@@ -1,10 +1,10 @@
 ## theon
 
-Sass/CSS library to give you an indexed set of neutral greys derived from a central base color.
-Looks nicer than the stark greys (#eee, #999, etc).
+Sass/CSS library to give you an indexed set of neutral colors derived from a central base color.
+Mixing a bit of color into the greys looks nicer than the stark greys (#eee, #999, etc).
 
 By default, it has 15 colors, indexed by lightness. If you use the Sass version you can
-customise the lighness and saturation, and/or build custom CSS
+customise the lighness and saturation, and/or build custom CSS.
 
 ####Bower:
 ```shell

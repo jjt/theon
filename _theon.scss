@@ -1,0 +1,40 @@
+$theonBase: #7a7a79 !default;
+$theonBaseHue: hue($theonBase) !default;
+$theonLgts: 4 10 16 22 29 36 43 50 57 64 71 78 84 89 95 !default;
+$theonSats: 3 3  3  3  3  4  5  5  5  5  5  6  7  9  10 !default;
+
+// Main interface
+@function theon($index:7, $base:$theonBase, $lgts:$theonLgts, $sats:$theonSats){
+  $sat: nth($sats, $index);
+  $lgt: nth($lgts, $index);
+  @return hsl(hue($theonBase), $sat, $lgt);
+}
+
+// Config: theon($base: #787, $lgts: 5 17 ... , $sats: 10 12 ...);
+@function theonConfig($base:false, $lgts:false, $sats:false) {
+  @if $base {
+    $theonBase: $base;
+  }
+  @if $lgts {
+    $theonLgts: $lgts;
+  }
+  @if $sats {
+    $theonSats: $sats;
+  }
+}
+
+// Placeholders
+@for $i from 1 through length($theonLgts) {
+  %theon-#{$i} {
+    color: theon($i);
+  } 
+  %theonBg-#{$i} {
+    background-color: theon($i);
+  } 
+  %theonFill-#{$i} {
+    fill: theon($i);
+  } 
+  %theonStroke-#{$i} {
+    stroke: theon($i);
+  } 
+}

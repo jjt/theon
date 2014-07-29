@@ -54,7 +54,7 @@ svg {
 #### Adding CSS classes with Sass
 
 ```scss
-// Customise these
+// Set these vars to customise
 $theonBase: #f00;
 $theonLgts: 10, 30, 50, 70, 90
 $theonSats: 10, 10, 20, 30, 40

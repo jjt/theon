@@ -41,7 +41,7 @@ svg {
 #### Customise with Sass
 
 ```scss
-// Can set custom base, lightnesses, and saturation variables before including
+// Can set custom base, lightnesses, and saturation variables before @importing theon
 $theonBase: #7a7a79; // Default
 $theonLgts: 4 10 16 22 29 36 43 50 57 64 71 78 84 89 95; // Defaults
 $theonSats: 3 3  3  3  3  4  5  5  5  5  5  6  7  9  10; // Defaults 

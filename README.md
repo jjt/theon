@@ -6,6 +6,8 @@ Mixing a bit of color into the greys looks nicer than the stark greys (#eee, #99
 By default it has 15 colors indexed by lightness. If you use the Sass version you can
 customise the lighness and saturation, and/or build custom CSS.
 
+![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen.png)
+
 ####Bower:
 ```shell
 bower install --save theon

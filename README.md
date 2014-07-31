@@ -4,21 +4,19 @@ A Sass/CSS library that gives you an indexed set of neutral colors derived from 
 Mixing a bit of color into the greys looks nicer than the stark greys (#eee, #999, etc).
 
 By default it has 15 shades, indexed by lightness. If you use the Sass version you can
-customise the lighness and saturation, and/or build custom CSS.
+customize the base color along with the lightness and saturation, and/or rebuild `theon.css` by `@import 'theon-css';`.
 
 ##### Default
 ![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen.png)
 
-##### Red base (#f00)
+##### Custom bases (#f00, #0f0, #00f)
 ![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen-f00.png)
 
-##### Green base (#0f0)
 ![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen-0f0.png)
 
-##### Blue base (#00f)
 ![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen-00f.png)
 
-###Bower:
+###Install:
 ```shell
 bower install --save theon
 ```

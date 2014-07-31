@@ -1,7 +1,7 @@
 ## theon
 
 A Sass/CSS library that gives you an indexed set of neutral colors derived from a central base color.
-Mixing a bit of color into the greys looks nicer than the stark greys (#eee, #999, etc).
+Mixing a bit of color into your greys usually looks nicer than the stark greys (#eee, #999, etc).
 
 By default it has 15 shades, indexed by lightness. If you use the Sass version you can
 customize the base color along with the lightness and saturation, and/or rebuild `theon.css` by `@import 'theon-css';`.

@@ -6,14 +6,24 @@ Mixing a bit of color into the greys looks nicer than the stark greys (#eee, #99
 By default it has 15 shades, indexed by lightness. If you use the Sass version you can
 customise the lighness and saturation, and/or build custom CSS.
 
+##### Default
 ![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen.png)
 
-####Bower:
+##### Red base (#f00)
+![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen-f00.png)
+
+##### Green base (#0f0)
+![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen-0f0.png)
+
+##### Blue base (#00f)
+![Theon greys](https://raw.githubusercontent.com/jjt/theon/master/theon-screen-00f.png)
+
+###Bower:
 ```shell
 bower install --save theon
 ```
 
-####CSS for declarative styles:
+###CSS for declarative styles:
 
 ```html
 <link rel="stylesheet" href="/path/to/theon.min.css">
@@ -25,7 +35,7 @@ bower install --save theon
     </svg>
 ```
 
-####Sass functions/placeholders:
+###Sass functions/placeholders:
 ```scss
 @import 'theon';
 
@@ -40,7 +50,7 @@ svg {
 }
 ```
 
-#### Customise with Sass
+### Customise with Sass
 
 ```scss
 // Can set custom base, lightnesses, and saturation variables before @importing theon
@@ -57,7 +67,7 @@ $customSats: 3 3  3  3  3  4  5  5  5  5  5  6  7  9  10;
 theonConfig(#7a7a79, $customLgts, $customSats); 
 ```
 
-#### Outputting CSS classes with Sass
+### Outputting CSS classes with Sass
 
 ```scss
 // Set these vars to customise
@@ -69,6 +79,6 @@ $theonSats: 10, 10, 20, 30, 40
 @import 'theon-css';
 ```
 
-#### Enjoy
+### Enjoy
 
 ![Wigglewigglewigglewiggle](http://img.pandawhale.com/112961-Ramsay-Snow-sausage-gif-Imgur-aNM9.gif)
